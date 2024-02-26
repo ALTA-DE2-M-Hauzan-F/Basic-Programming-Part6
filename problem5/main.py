@@ -1,5 +1,8 @@
 def remove_duplicates(array):
-    uniq_arr=list(dict.fromkeys(array))
+    uniq_arr=[]
+    for a in array:
+        if a not in uniq_arr:
+            uniq_arr.append(a)
     return len(uniq_arr)
 
 if __name__ == '__main__':
